@@ -1,2 +1,6 @@
 pageController:
   msg: "from application.yml"
+
+app-config:
+  appVersion: 1.0.0
+  appName: "Google"

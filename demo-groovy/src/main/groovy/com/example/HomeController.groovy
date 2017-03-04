@@ -1,7 +1,9 @@
 package com.example
 
+import com.foo.AppConfig
 import com.foo.NotificationService
 import com.foo.User
+import org.springframework.beans.factory.annotation.Autowire
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.web.bind.annotation.RequestMapping
@@ -12,6 +14,9 @@ class HomeController {
 
     NotificationService notificationService
     User user
+
+    @Autowired
+    AppConfig appConfig
 
     @Value('${pageController.msg}')
     String pageControllerMsg
@@ -40,5 +45,10 @@ class HomeController {
     @RequestMapping("/homeFromProperties")
     def homeFromProperties(){
         pageControllerMsg
+    }
+
+    @RequestMapping("/app-info")
+    def appInfo(){
+        appConfig.toString()
     }
 }

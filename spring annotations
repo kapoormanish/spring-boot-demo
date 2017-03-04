@@ -21,3 +21,6 @@ Constructorbased
 @Bean 
 
 @Value('${pageController.msg}') //to read values form application.properties
+
+@ConfigurationProperies('myConfig') //to bind pojo with application.properties
+@EnableConfigurationProperties

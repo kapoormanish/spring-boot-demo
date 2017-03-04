@@ -1,0 +1,8 @@
+@RestController for REST response
+@RequestMapping("/") url mapping
+
+
+
+generate project
+spring init -d=web my-app
+gradle bootRun

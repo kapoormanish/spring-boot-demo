@@ -11,6 +11,13 @@ gradle bootRun
 
 Bean injection
 @Autowired
+
 By name
 Setterbased
 Constructorbased
+
+
+@Service
+@Bean 
+
+@Value('${pageController.msg}') //to read values form application.properties

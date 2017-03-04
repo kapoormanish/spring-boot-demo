@@ -1,8 +1,16 @@
 @RestController for REST response
 @RequestMapping("/") url mapping
-
+@Autowired bean
 
 
 generate project
 spring init -d=web my-app
 gradle bootRun
+
+
+
+Bean injection
+@Autowired
+By name
+Setterbased
+Constructorbased

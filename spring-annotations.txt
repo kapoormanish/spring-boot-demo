@@ -1,0 +1,2 @@
+@RestController for REST response
+@RequestMapping("/") url mapping

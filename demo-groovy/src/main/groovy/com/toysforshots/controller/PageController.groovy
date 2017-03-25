@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RestController
  * Created by manish on 25/3/17.
  */
 
-@RestController
+@Controller
 class PageController {
 
-//    @RequestMapping("/")
-    public String home(){
-        return "helloworld.html"
+    @RequestMapping("/")
+    public String home(Map model){
+        return "thymeleaf-demo"
     }
 
 }

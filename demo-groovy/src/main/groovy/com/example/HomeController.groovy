@@ -12,43 +12,43 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class HomeController {
 
-    NotificationService notificationService
-    User user
-
-    @Autowired
-    AppConfig appConfig
-
-    @Value('${pageController.msg}')
-    String pageControllerMsg
-
-    @Autowired
-    void setNotificationService(NotificationService notificationService) {
-        this.notificationService = notificationService
-    }
-
-    @Autowired
-    void setUser(User user) {
-        this.user = user
-    }
-
-    @RequestMapping("/")
-    def home(){
-        notificationService.toString()
-    }
-
-
-    @RequestMapping("/newhome")
-    def home2(){
-        user.toString()
-    }
-
-    @RequestMapping("/homeFromProperties")
-    def homeFromProperties(){
-        pageControllerMsg
-    }
-
-    @RequestMapping("/app-info")
-    def appInfo(){
-        appConfig.toString()
-    }
+//    NotificationService notificationService
+//    User user
+//
+//    @Autowired
+//    AppConfig appConfig
+//
+//    @Value('${pageController.msg}')
+//    String pageControllerMsg
+//
+//    @Autowired
+//    void setNotificationService(NotificationService notificationService) {
+//        this.notificationService = notificationService
+//    }
+//
+//    @Autowired
+//    void setUser(User user) {
+//        this.user = user
+//    }
+//
+//    @RequestMapping("/")
+//    def home(){
+//        notificationService.toString()
+//    }
+//
+//
+//    @RequestMapping("/newhome")
+//    def home2(){
+//        user.toString()
+//    }
+//
+//    @RequestMapping("/homeFromProperties")
+//    def homeFromProperties(){
+//        pageControllerMsg
+//    }
+//
+//    @RequestMapping("/app-info")
+//    def appInfo(){
+//        appConfig.toString()
+//    }
 }
